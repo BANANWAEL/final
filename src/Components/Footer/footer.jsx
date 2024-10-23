@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import styles from './footer.module.css'; // Corrected filename
-import img from "../../assets/logoo.png";
+// import img from "../../assets/logo2 (2).png";
 
 export default class Footer extends Component {
     render() {
@@ -10,9 +10,9 @@ export default class Footer extends Component {
 
                 <div id="footer" className={`footercontainer p-3 ${styles.main}`}>
                     <div className={`container text-center ${styles.container}`}>
-                        <div className="icon">
-                            <img src={img} alt="Logo" width={"100px"} height={"100px"} />
-                        </div>
+                        {/* <div className="icon">
+                            <img src={img} alt="Logo" width={"400px"} height={"100px"} />
+                        </div> */}
                         <div className={`${styles.links}`}>
                             <a className={`${styles.link}`} href="#home">Home</a>
                             <a className={`${styles.link}`} href="#traks">Our Specialties</a>

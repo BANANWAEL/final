@@ -3,16 +3,17 @@
 }
 
 .container {
+  /*background-color: rgb(225, 141, 16);*/
   background-image: url(https://i.pinimg.com/originals/a8/95/d1/a895d143497deab9f5b94834a7d9550a.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   margin-bottom: 1px;
+  align-content: center;
 }
 .container h2 {
-  padding-top: 35%;
   font-size: 5ch;
   color: rgb(255, 255, 255);
 }
@@ -34,6 +35,10 @@
   border-width: 3px;
   padding: 10px 10px 10px 10px;
   margin-right: 8px;
+  /*i{
+  color: white;
+  font-size: 1.4ch;
+  }*/
 }
 .container .button2 {
   background: none;
@@ -45,6 +50,10 @@
   border-color: rgb(0, 0, 0);
   border-width: 2px;
   padding: 10px 10px 10px 10px;
+  /*i{
+  color: white;
+  font-size: 1.4ch;
+  }*/
 }
 .container .button2 span {
   font-size: 1.4ch;
@@ -66,8 +75,8 @@
   margin-left: 10px;
 }
 
+/*****************************************************************************/
 .container1 {
-  height: 35vh;
   width: 100%;
   background-color: rgb(255, 255, 255);
   margin-bottom: 0vh;
@@ -81,94 +90,100 @@
 .container1 i {
   color: rgb(0, 0, 0);
 }
-.container1 .dif {
-  width: 40px;
-  height: 25vh;
-  background-color: antiquewhite;
-}
 
+/******************************************************************************/
 .container2 {
   margin: 100px 0px 100px 0px;
   background-color: rgb(174, 208, 208);
   border-radius: 1dvb;
   margin-left: 40px;
   margin-right: 40px;
+  padding: 50px;
 }
 .container2 h1 {
   font-size: 5ch;
   font-weight: 500;
-  padding-left: 20px;
 }
 .container2 span {
   color: rgb(0, 110, 255);
   font-size: 5ch;
   font-weight: 500;
-  padding-left: 20px;
+}
+.container2 h2 {
+  font-size: 10;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
 }
 .container2 h3 {
   font-size: 3ch;
   font-weight: 450;
   color: rgb(0, 0, 0);
-  padding-left: 20px;
 }
 .container2 p {
   font-size: 2.5ch;
   font-weight: 350;
-  color: rgba(36, 36, 36, 0.782);
-  padding-left: 20px;
+  color: rgba(2, 2, 2, 0.693);
 }
-.container2 img {
-  text-align: center;
+@media (max-width: 1200px) {
+  .container2 img {
+    width: 300px;
+  }
 }
 
-.container3 {
-  margin-bottom: 0px;
-}
-.container3 img {
+/*****************************************************************************/
+.container5 img {
   border-radius: 3dvh;
   background-color: rgb(8, 204, 204);
   transition: 0.5s ease;
 }
-.container3 img:hover {
+.container5 img:hover {
   transform: scale(1.1);
 }
 
-/*.container3 {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 70vh;
-    margin-bottom: 300px;
+/*****************************************************************************/
+.container3 {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 300px;
+}
+.container3 .card1 {
+  background-color: rgb(152, 165, 165);
+  height: 50px;
+  width: 400px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 2dvh;
+  margin-bottom: 20px;
+  transition: 0.5s ease;
+}
+.container3 .card1 img {
+  border-radius: 2dvh;
+}
+.container3 .card1 h3 {
+  font-size: 2ch;
+}
+.container3 .card1:hover {
+  transform: scale(1.1);
+}
 
-    .card1 {
-        background-color: rgb(152, 165, 165);
-        height: 50px;
-        width: 400px;
+/***************************************************************************************/
+.container4 {
+  text-align: start;
+  border-radius: 2dvh;
+  margin-top: 100px;
+  padding-bottom: 50px;
+  background-color: aliceblue;
+}
+.container4 h1 {
+  margin-top: 20px;
+  font-size: 6ch;
+  font-weight: 900;
+}
 
-        text-align: center;
-        padding-top: 10px;
-        border-radius: 2dvh;
-        margin-bottom: 20px;
-        transition: 0.5s ease;
-
-
-        img {
-            border-radius: 2dvh;
-        }
-
-        h3 {
-            font-size: 2ch;
-        }
-    }
-
-    .card1:hover {
-        transform: scale(1.1);
-    }
-
-
-}*/
+/*************************************banan******************************************************/
 .container10 {
   min-height: 30vh;
-  font-family: "PreplyInterV";
   font-family: "Platform", "Platform-fallback", "Platform-fallback-android", "Noto Sans", "NotoSans-fallback", "NotoSans-fallback-android", sans-serif;
 }
 .container10 .h1 {
@@ -180,9 +195,9 @@
   font-weight: 400;
 }
 
+/* start of be a developer section */
 .container9 {
-  min-height: 95vh;
-  position: relative;
+  min-height: 105vh;
   border: 1px solid #282626;
   border-radius: 25px;
 }
@@ -236,62 +251,53 @@
   }
 }
 
-.container4 {
-  text-align: start;
-  border-radius: 0dvh;
-  margin-top: 100px;
-  padding-bottom: 50px;
-  background-color: aliceblue;
-}
-.container4 h1 {
-  margin-top: 20px;
-  font-size: 6ch;
-  font-weight: 900;
-}
-
-.container5 {
-  margin: 50px 0px 100px 900px;
+/* end of be a developer section */
+/*******************************************************************************************/
+.container6 {
+  margin: 50px 0px 100px 0px;
   background-color: rgb(237, 225, 209);
   border-radius: 1dvb;
   margin-left: 40px;
   margin-right: 40px;
   padding: 50px;
 }
-.container5 h1 {
+.container6 h1 {
   font-size: 6ch;
   font-weight: 600;
 }
-.container5 span {
+.container6 span {
   color: rgb(0, 110, 255);
   font-size: 5ch;
   font-weight: 700;
 }
-.container5 h2 {
+.container6 h2 {
   font-size: 10;
   font-weight: 900;
   color: rgb(0, 0, 0);
 }
-.container5 h3 {
+.container6 h3 {
   font-size: 3ch;
   font-weight: 400;
   color: rgb(0, 0, 0);
 }
-.container5 p {
+.container6 p {
   font-size: 2ch;
   font-weight: 450;
   color: rgba(2, 2, 2, 0.693);
 }
 
-.container6 img {
+/*****************************************************************************/
+.container7 img {
   border-radius: 3dvh;
   background-color: rgb(8, 204, 204);
   transition: 0.5s ease;
 }
-.container6 img:hover {
+.container7 img:hover {
   transform: scale(1.1);
 }
 
-.container7 {
+/****************************************************************************/
+.container8 {
   margin: 100px 0px 100px 0px;
   background-color: rgb(231, 228, 211);
   border-radius: 2dvh;
@@ -299,20 +305,20 @@
   margin-right: 40px;
   padding: 50px;
 }
-.container7 a {
+.container8 a {
   text-decoration: none;
 }
-.container7 a h4 {
+.container8 a h4 {
   color: black;
   padding-bottom: 50px;
 }
-.container7 a h4:hover {
+.container8 a h4:hover {
   text-decoration: underline;
 }
-.container7 h1 {
+.container8 h1 {
   font-size: 5ch;
   font-weight: 600;
 }
-.container7 h1 span {
+.container8 h1 span {
   color: rgb(0, 110, 255);
 }/*# sourceMappingURL=home.module.css.map */

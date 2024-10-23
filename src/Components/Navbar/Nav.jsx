@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import styles from "./nav.module.css";
-import img from "../../assets/logoo.png"
+import img from "../../assets/logoo2.png"
 
 export default class Navbar extends Component {
   render() {
@@ -13,7 +13,7 @@ export default class Navbar extends Component {
                 className={`navbar-brand fs-1 ${styles.navbarbrand}`}
                 href="/"
               >
-                <img src={img} alt="" width={60} height={60} />
+                <img src={img} alt="" width={80} height={60} />
               </a>
 
               <button
@@ -59,6 +59,8 @@ export default class Navbar extends Component {
             </div>
           </nav>
         </div>
+
+        
       </Fragment>
     );
   }
