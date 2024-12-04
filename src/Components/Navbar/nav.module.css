@@ -1,50 +1,65 @@
 .navbar {
-  --head-color: rgba(0, 0, 0, 0.986);
+  max-height: 15vh;
+  --head-color: #c7c0c0f6;
   background-color: var(--head-color);
+  position: sticky;
+  display: flex;
+  top: 0;
   width: 100%;
-  height: 90px;
-  position: fixed;
-  z-index: 999;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
 }
 .navbar .navbarbrand {
-  color: #eae1e1;
+  color: rgb(178, 65, 125);
+  font-family: "Doto", sans-serif;
+  font-weight: 700;
 }
 .navbar .navbarnav .navlink:hover {
-  color: rgb(65, 112, 159);
+  color: rgb(33, 34, 114);
 }
 .navbar .navbarnav .navlink {
-  color: rgb(240, 237, 237);
+  color: rgb(65, 112, 159);
+  color: rgb(178, 65, 125);
   font-size: 2ch;
+  font-family: "Doto", sans-serif;
+  font-style: normal;
   font-weight: 600;
+  margin: 10px;
 }
-.navbar .navbarnav .navlink .btn1 {
-  margin-left: 300px;
-  font-size: 2ch;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.568);
-  transition: 0.5s ease;
-}
-.navbar .navbarnav .navlink .btn1:hover {
-  background-color: rgb(0, 110, 255);
-  transform: scale(1.1);
-  font-size: 2ch;
+
+.navbar.scrolled {
+  background-color: rgba(43, 33, 33, 0.6);
   color: white;
 }
-.navbar .navbarnav .navlink .btn2 {
-  background: rgba(36, 36, 36, 0.421);
-  color: #ffffff;
-  font-size: 2ch;
-  font-weight: 600;
-  transition: 0.5s ease;
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.navbar .navbarnav .navlink .btn2:hover {
-  background-color: rgb(0, 110, 255);
-  color: white;
-  transform: scale(1.1);
+
+.navbarbrand {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
 }
-.navbar .navbarnav .navlink .btn2 i {
-  color: rgb(0, 0, 0);
-  font-size: 1.5ch;
-  padding-bottom: 10px;
+
+.navlink {
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.navlink:hover {
+  color: #007bff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 991px) {
+  .navbarnav {
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .navlink {
+    padding: 0.5rem 1rem;
+    margin: 0.25rem 0 !important;
+  }
 }/*# sourceMappingURL=nav.module.css.map */

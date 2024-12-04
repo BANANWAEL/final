@@ -1,67 +1,78 @@
-import React, { Component, Fragment } from "react";
-import styles from "./nav.module.css";
-import img from "../../assets/logoo2.png"
+import React, { useState } from 'react';
+import styles from "./nav.module.css"
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-export default class Navbar extends Component {
-  render() {
-    return (
-      <Fragment>
-        <div className={`${styles.navbar}`}>
-          <nav className="navbar navbar-expand-lg">
-            <div className="container">
-              <a
-                className={`navbar-brand fs-1 ${styles.navbarbrand}`}
-                href="/"
-              >
-                <img src={img} alt="" width={80} height={60} />
-              </a>
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="/navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div
-                  className={`navbar-nav ms-auto mb-2 mb-lg-0 fs-6 pt-2 fw-lighter ${styles.navbarnav}`}
+  return (
+    <div className= {`navbar-container ${styles.navbar}`}>
+      <div className="container">
+        <nav className="navbar navbar-expand-lg navbar-light">
+          <div className="container position-relative">
+            {/* Brand Logo */}
+            <a 
+              href="/" 
+              className={`navbar-brand fs-3 ${styles.navbarbrand}`}
+            >
+              TECH WORLD
+            </a>
+
+            {/* Mobile Hamburger Toggle */}
+            <button 
+            // style={{color: `rgb(${178}, ${65}, ${125})`}}
+              className={`navbar-toggler ${styles.navbartoggler}`} 
+              type="button" 
+              onClick={toggleMenu}
+              aria-expanded={isMenuOpen}
+              aria-label="Toggle navigation"
+            >
+              <span style={{color: `rgb(${178}, ${65}, ${125})`}}  className="navbar-toggler-icon"></span>
+            </button>
+
+            {/* Navigation Links */}
+            <div 
+              className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`}
+            >
+              <div className={`navbar-nav ms-auto ${styles.navbarnav}`}>
+                <a 
+                  href="/home" 
+                  target="_self"
+                  className={`nav-link active m-2 ${styles.navlink}`}
                 >
-                  <a
-                    className={`nav-link  active mt-2 mx-2 ${styles.navlink}`}
-                    href="/home"
-                  >
-                    Home
-                  </a>
-
-                  <a
-                    className={`nav-link  active mt-2 m-2 ${styles.navlink}`}
-                    href="/ProfileForm"
-                  >
-                    Find talent
-                  </a>
-
-                  
-                  <a
-                    className={`nav-link  active mt-2 mx-2 ${styles.navlink}`}
-                    href="/FreePro"
-                  >
-                    Find work
-                  </a>
-
-                  
-                </div>
+                  Home
+                </a>
+                <a 
+                  href="https://about-us21.netlify.app/" 
+                  className={`nav-link active m-2 ${styles.navlink}`}
+                  target="_self"
+                  rel="noopener noreferrer"
+                >
+                  About
+                </a>
+                <a 
+                  href="https://client-page-58c972.netlify.app/" 
+                  className={`nav-link active m-2 ${styles.navlink}`}
+                >
+                  Find Developer
+                </a>
+                <a 
+                  href="https://regist-tech.netlify.app/" 
+                  className={`nav-link active m-2 ${styles.navlink}`}
+                  target="_self"
+                  rel="noopener noreferrer"
+                >
+                  Find Work
+                </a>
               </div>
             </div>
-          </nav>
-        </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  );
+};
 
-        
-      </Fragment>
-    );
-  }
-}
+export default Navbar;

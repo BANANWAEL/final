@@ -1,24 +1,25 @@
 .home {
   overflow: hidde;
+  font-family: "Jost", sans-serif;
 }
 
 .container {
-  /*background-color: rgb(225, 141, 16);*/
-  background-image: url(https://i.pinimg.com/originals/a8/95/d1/a895d143497deab9f5b94834a7d9550a.gif);
+  background-image: url(https://i.pinimg.com/1200x/96/5f/6e/965f6eff85855f52eb797a058755192b.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 100%;
+  background-position: center;
   width: 100%;
   height: 100vh;
   margin-bottom: 1px;
   align-content: center;
+  font-family: "Caveat", cursive;
 }
 .container h2 {
   font-size: 5ch;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 .container h2 span {
-  color: rgb(255, 255, 255);
+  color: white;
 }
 .container ul li {
   font-size: 3ch;
@@ -26,8 +27,10 @@
 }
 .container .button1 {
   background: white;
+  background-color: rgba(58, 56, 56, 0.6);
+  color: white;
+  border-color: white;
   width: 18ch;
-  color: rgb(0, 0, 0);
   font-size: 2.5ch;
   border-style: solid;
   border-radius: 3dvh;
@@ -35,10 +38,7 @@
   border-width: 3px;
   padding: 10px 10px 10px 10px;
   margin-right: 8px;
-  /*i{
-  color: white;
-  font-size: 1.4ch;
-  }*/
+  transition: all 0.3s ease-in-out;
 }
 .container .button2 {
   background: none;
@@ -50,10 +50,7 @@
   border-color: rgb(0, 0, 0);
   border-width: 2px;
   padding: 10px 10px 10px 10px;
-  /*i{
-  color: white;
-  font-size: 1.4ch;
-  }*/
+  transition: all 0.3s ease-in-out;
 }
 .container .button2 span {
   font-size: 1.4ch;
@@ -62,14 +59,16 @@
 }
 .container .button1:hover {
   background-color: rgba(58, 56, 56, 0.273);
-  transform: scale(1.1);
-  color: white;
-  border-color: white;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1) rotate(0deg);
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
   margin-right: 20px;
 }
 .container .button2:hover {
   background-color: rgba(58, 56, 56, 0.273);
-  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+  transform: scale(1) rotate(0deg);
   color: white;
   border-color: black;
   margin-left: 10px;
@@ -77,6 +76,7 @@
 
 /*****************************************************************************/
 .container1 {
+  font-family: "Caveat", cursive;
   width: 100%;
   background-color: rgb(255, 255, 255);
   margin-bottom: 0vh;
@@ -91,10 +91,25 @@
   color: rgb(0, 0, 0);
 }
 
+@media (max-width: 768px) {
+  .container1 {
+    text-align: center;
+  }
+  .container1 .row > div {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container1 i {
+    margin-bottom: 0.5rem;
+  }
+}
 /******************************************************************************/
 .container2 {
+  font-family: "Caveat", cursive;
   margin: 100px 0px 100px 0px;
-  background-color: rgb(174, 208, 208);
+  background-color: rgb(168, 193, 216);
   border-radius: 1dvb;
   margin-left: 40px;
   margin-right: 40px;
@@ -105,19 +120,19 @@
   font-weight: 500;
 }
 .container2 span {
-  color: rgb(0, 110, 255);
+  color: rgb(142, 30, 90);
   font-size: 5ch;
   font-weight: 500;
 }
 .container2 h2 {
   font-size: 10;
   font-weight: 900;
-  color: rgb(0, 0, 0);
+  color: rgb(146, 45, 105);
 }
 .container2 h3 {
   font-size: 3ch;
   font-weight: 450;
-  color: rgb(0, 0, 0);
+  color: rgb(81, 48, 111);
 }
 .container2 p {
   font-size: 2.5ch;
@@ -131,15 +146,6 @@
 }
 
 /*****************************************************************************/
-.container5 img {
-  border-radius: 3dvh;
-  background-color: rgb(8, 204, 204);
-  transition: 0.5s ease;
-}
-.container5 img:hover {
-  transform: scale(1.1);
-}
-
 /*****************************************************************************/
 .container3 {
   background-color: rgb(255, 255, 255);
@@ -172,7 +178,6 @@
   text-align: start;
   border-radius: 2dvh;
   margin-top: 100px;
-  padding-bottom: 50px;
   background-color: aliceblue;
 }
 .container4 h1 {
@@ -185,14 +190,17 @@
 .container10 {
   min-height: 30vh;
   font-family: "Platform", "Platform-fallback", "Platform-fallback-android", "Noto Sans", "NotoSans-fallback", "NotoSans-fallback-android", sans-serif;
+  font-family: "Caveat", cursive;
 }
 .container10 .h1 {
-  font-size: 58px;
+  font-size: 65px;
   font-weight: 800;
+  color: cornflowerblue;
 }
 .container10 .p {
   font-size: 20px;
   font-weight: 400;
+  color: rgb(71, 45, 128);
 }
 
 /* start of be a developer section */
@@ -204,20 +212,20 @@
 .container9 .row {
   position: relative;
 }
-.container9 .row .muliimage {
+.container9 .row .multiimage {
   position: relative;
 }
-.container9 .row .muliimage img {
+.container9 .row .multiimage img {
   border-radius: 25px;
   position: absolute;
 }
-.container9 .row .muliimage .img1 {
+.container9 .row .multiimage .img1 {
   z-index: 2;
 }
-.container9 .row .muliimage .img2 {
+.container9 .row .multiimage .img2 {
   z-index: 1;
 }
-.container9 .row .muliimage .img3 {
+.container9 .row .multiimage .img3 {
   z-index: 0;
 }
 .container9 .row .text {
@@ -231,7 +239,7 @@
 }
 @media (max-width: 1200px) {
   .container9 .row {
-    min-height: 180vh;
+    min-height: 130vh;
   }
   .container9 .row img {
     width: 380px;
@@ -251,42 +259,12 @@
   }
 }
 
-/* end of be a developer section */
-/*******************************************************************************************/
-.container6 {
-  margin: 50px 0px 100px 0px;
-  background-color: rgb(237, 225, 209);
-  border-radius: 1dvb;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding: 50px;
-}
-.container6 h1 {
-  font-size: 6ch;
-  font-weight: 600;
-}
-.container6 span {
-  color: rgb(0, 110, 255);
-  font-size: 5ch;
-  font-weight: 700;
-}
-.container6 h2 {
-  font-size: 10;
-  font-weight: 900;
-  color: rgb(0, 0, 0);
-}
-.container6 h3 {
-  font-size: 3ch;
-  font-weight: 400;
-  color: rgb(0, 0, 0);
-}
-.container6 p {
-  font-size: 2ch;
-  font-weight: 450;
-  color: rgba(2, 2, 2, 0.693);
+.btn, img, a {
+  transition: all 0.3s ease;
 }
 
-/*****************************************************************************/
+/* end of be a developer section */
+/*******************************************************************************************/
 .container7 img {
   border-radius: 3dvh;
   background-color: rgb(8, 204, 204);
@@ -296,10 +274,72 @@
   transform: scale(1.1);
 }
 
+.container7 .img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  border-radius: 3dvh;
+  transition: all 0.3s ease;
+}
+.container7 .img-wrapper img {
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+  border-radius: 3dvh;
+}
+.container7 .img-wrapper:hover img {
+  transform: scale(1.1);
+}
+.container7 .img-wrapper:hover::after {
+  opacity: 1;
+}
+.container7 .img-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.container7 .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container7 .row .col-lg-4 {
+  height: 300px;
+}
+@media (max-width: 991px) {
+  .container7 .row .col-lg-4 {
+    height: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .container7 .row .col-lg-4 {
+    height: 200px;
+  }
+}
+.container7 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+.container7 img:hover {
+  transform: scale(1.05);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /****************************************************************************/
 .container8 {
   margin: 100px 0px 100px 0px;
-  background-color: rgb(231, 228, 211);
+  background-color: rgb(210, 191, 227);
   border-radius: 2dvh;
   margin-left: 40px;
   margin-right: 40px;
@@ -320,5 +360,5 @@
   font-weight: 600;
 }
 .container8 h1 span {
-  color: rgb(0, 110, 255);
+  color: rgb(47, 9, 142);
 }/*# sourceMappingURL=home.module.css.map */

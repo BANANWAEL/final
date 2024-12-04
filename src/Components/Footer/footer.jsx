@@ -15,9 +15,9 @@ export default class Footer extends Component {
                         </div> */}
                         <div className={`${styles.links}`}>
                             <a className={`${styles.link}`} href="#home">Home</a>
-                            <a className={`${styles.link}`} href="#traks">Our Specialties</a>
+                            <a className={`${styles.link}`} href="#ourspecialties">Our Specialties</a>
                             <a className={`${styles.link}`} href="#beadiv">Start your Developing Journey</a>
-                            <a className={`${styles.link}`} href="#footer">Contact Us</a>
+                            {/* <a className={`${styles.link}`} href="#footer">Contact Us</a> */}
                         </div>
                         <ul className={`${styles.icons}`}>
                             <a className={`${styles.icon}`} href="/"><i className="fa-brands fa-whatsapp"></i></a>
